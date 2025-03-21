@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+nav{
+    padding: 12px;
+    width: 100%;
+    height: 6vh;
+    background-color: #27667B;
+    /* position: fixed; */
+}
+ul li{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+ul li a{
+    font-size: 1.2rem;
+}
+body{
+    background-color: darkslategray;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin: 55px;
+}
+.container{
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    background-color: grey;
+    height: 80vh;
+    width: 60vw;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 16px 11px #333333;
+}
+.container:hover{
+    box-shadow: none;
+    background-color: black;
+    transition: 0.3s;
+}
+.box1{
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    background-color: pink;
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 16px 11px #333333;
+}
+.box:hover{
+    box-shadow: none;
+}
+.box1:hover{
+    background-color: darkred;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.box2{
+    border-radius: 50px;
+    background-color: yellowgreen;
+    height: 40vh;
+    width: 60%;
+    box-shadow: 10px 16px 11px #333333;
+}
+.box2:hover{
+    background-color: #F8ED8C;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 12px;
+    height: 78vh;
+    width: 20vw;
+    background-color: #007074;
+    box-shadow:10px 16px 11px #333333 ;
+    margin: 34px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start; /* => while overflowing items will start from item-1 */
+    align-items: center;
+    /* flex-direction: column;
+    flex-wrap: nowrap; */
+    flex-flow: column nowrap;
+    gap: 23px;
+    overflow: auto;
+}
+/* To hide SCROLL_BAR without affection it's functionality */
+.card::-webkit-scrollbar{
+    display: none;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.item{
+    width: 80%;
+    min-height: 120px;
+    border: 2px solid black;
+    background-color: #6A9C89;
+}
+.item:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+}
