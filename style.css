@@ -24,10 +24,8 @@ ul li{
     a{
         text-decoration: none;
         color: #ffffff;
+        font-size: 1.2rem;
     }
-}
-ul li a{
-    font-size: 1.2rem;
 }
 body{
     background-color: darkslategray;
